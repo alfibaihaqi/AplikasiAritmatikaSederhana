@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aplikasi Aritmatika Sederhana</string>
+    <string name="nilai_pertama">Nilai Pertama</string>
+    <string name="nilai_kedua">Nilai Kedua</string>
+    <string name="kurang">-</string>
+    <string name="tambah">+</string>
+    <string name="bagi">/</string>
+    <string name="kali">X</string>
+    <string name="hasil">Hasil</string>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="80dp"
+       android:layout_marginLeft="@dimen/margin"
+       android:layout_marginRight="@dimen/margin"
+       android:paddingRight="@dimen/padding"
+       android:paddingLeft="@dimen/padding"
+       android:background="@drawable/bc"
+       android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:src="@drawable/student"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="@dimen/margintop"/>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/margintop">
+         <EditText
+             android:id="@+id/edtNilai1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="@string/nilai_pertama"
+             android:inputType="numberDecimal"
+             android:textColorHint="@android:color/black"
+             android:paddingTop="@dimen/padding_top"/>
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/margintop">
+         <EditText
+             android:id="@+id/edtNilai2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="@string/nilai_kedua"
+             android:inputType="numberDecimal"
+             android:textColorHint="@android:color/black"
+             android:paddingTop="@dimen/padding_top"
+             android:layout_marginTop="@dimen/margin_top"/>
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/margin_top">
+
+         <Button
+             android:id="@+id/btnTambah"
+             android:layout_width="@dimen/btn_height"
+             android:layout_height="@dimen/btn_height"
+             android:text="@string/tambah"
+             android:textSize="@dimen/btn_font_size"
+             android:textColor="@android:color/black"
+             android:textStyle="bold"
+             android:background="@drawable/bc_button"/>
+
+         <Button
+             android:id="@+id/btnKurang"
+             android:layout_width="@dimen/btn_height"
+             android:layout_height="@dimen/btn_height"
+             android:text="@string/kurang"
+             android:textSize="@dimen/btn_font_size"
+             android:textColor="@android:color/black"
+             android:textStyle="bold"
+             android:background="@drawable/bc_button"
+             android:layout_marginLeft="@dimen/btn_marginLeft"/>
+
+         <Button
+             android:id="@+id/btnKali"
+             android:layout_width="@dimen/btn_height"
+             android:layout_height="@dimen/btn_height"
+             android:text="@string/kali"
+             android:textSize="@dimen/btn_font_size"
+             android:textColor="@android:color/black"
+             android:textStyle="bold"
+             android:background="@drawable/bc_button"
+             android:layout_marginLeft="@dimen/btn_marginLeft"/>
+
+         <Button
+             android:id="@+id/btnBagi"
+             android:layout_width="@dimen/btn_height"
+             android:layout_height="@dimen/btn_height"
+             android:text="@string/bagi"
+             android:textSize="@dimen/btn_font_size"
+             android:textColor="@android:color/black"
+             android:textStyle="bold"
+             android:background="@drawable/bc_button"
+             android:layout_marginLeft="@dimen/btn_marginLeft"/>
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/btnBersih"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Bersihkan"
+          android:textColor="@android:color/black"
+          android:background="@drawable/bc_button"
+          android:layout_marginTop="@dimen/margin_top"/>
+
+      <TextView
+          android:id="@+id/tvHasil"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/hasil"
+          android:textSize="@dimen/tv_hasil"
+          android:textColor="@android:color/black"
+          android:textAlignment="center"
+          android:layout_marginTop="@dimen/margin_top"/>
+
+   </LinearLayout>
+
+</RelativeLayout>
